@@ -1,7 +1,6 @@
-# Vue 3 + Vite
+开发环境下，npm install之后使用npm run dev运行。
+运行后端容器，需要：
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+* docker-compose -f docker-compose.yaml up
+* 在db容器中建立一个名为osca的数据库
+* docker-compose restart backend重启backend容器(因为docker-compose没有时序控制，backend会退出，需要重启)

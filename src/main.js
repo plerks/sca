@@ -10,9 +10,10 @@ const cache = new InMemoryCache()
 
 const apolloClient = new ApolloClient({
   cache,
-  uri: 'http://localhost:4042/graphql',
+  uri: 'http://localhost:3000/graphql',
 })
 import { createApolloProvider } from '@vue/apollo-option'
+import router from './router.js'
 
 const apolloProvider = createApolloProvider({
   defaultClient: apolloClient,
@@ -20,4 +21,5 @@ const apolloProvider = createApolloProvider({
 const app = createApp(App)
 app.use(vuetify)
 app.use(apolloProvider)
+app.use(router)
 app.mount('#app')

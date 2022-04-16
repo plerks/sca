@@ -15,10 +15,10 @@
   <!--navigation-->
   <ul class="metismenu" id="menu">
     <li>
-      <a href="javascript:;" class="has-arrow">
+      <router-link to="/reposcan" href="javascript:;" class="has-arrow">
         <div class="parent-icon"><i class="bi bi-house-fill"></i></div>
-        <div class="menu-title">Dashboard</div>
-      </a>
+          <div class="menu-title">Dashboard</div>
+      </router-link>
       <ul>
         <li>
           <a href="index.html"><i class="bi bi-circle"></i>Blue Dashboard</a>

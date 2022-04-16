@@ -7,7 +7,7 @@
       <sidebar></sidebar>
     </aside>
     <main class="page-content">
-      <main-panel></main-panel>
+      <router-view name="MainPanel"></router-view>
     </main>
   </div>
 </template>
@@ -15,13 +15,13 @@
 <script>
 import Navbar from "./components/Navbar.vue";
 import Sidebar from "./components/Sidebar.vue";
-import MainPanel from "./components/MainPanel.vue";
+import CodeSnippetScan from "./components/CodeSnippetScan.vue";
 export default {
   name: "App",
   components: {
     Navbar,
     Sidebar,
-    MainPanel,
+    CodeSnippetScan,
   },
   data() {
     return {}
